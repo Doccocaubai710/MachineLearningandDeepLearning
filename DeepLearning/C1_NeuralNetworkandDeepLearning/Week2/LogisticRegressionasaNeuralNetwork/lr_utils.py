@@ -2,11 +2,11 @@ import numpy as np
 import h5py
 
 def load_dataset():
-    train_dataset = h5py.File('E:/DeepLearning/C1_NeuralNetworkandDeepLearning/Week2/LogisticRegressionasaNeuralNetwork/datasets/train_catvnoncat.h5', 'r')
+    train_dataset = h5py.File('E://DeepLearning//C1_NeuralNetworkandDeepLearning//Week2//LogisticRegressionasaNeuralNetwork//datasets//train_catvnoncat.h5', 'r')
     train_set_x_orig = np.array(train_dataset["train_set_x"][:])
     train_set_y_orig = np.array(train_dataset["train_set_y"][:])
 
-    test_dataset = h5py.File('E:/DeepLearning/C1_NeuralNetworkandDeepLearning/Week2/LogisticRegressionasaNeuralNetwork/datasets/test_catvnoncat.h5', 'r')
+    test_dataset = h5py.File('E://DeepLearning//C1_NeuralNetworkandDeepLearning//Week2//LogisticRegressionasaNeuralNetwork//datasets//test_catvnoncat.h5', 'r')
     test_set_x_orig = np.array(test_dataset["test_set_x"][:])
     test_set_y_orig = np.array(test_dataset["test_set_y"][:])
 
@@ -30,8 +30,8 @@ def check_hdf5_file(file_path):
         print("HDF5 file is invalid or cannot be opened.")
 
 # Specify the paths to your HDF5 files
-train_hdf5_path = 'E:/DeepLearning/C1_NeuralNetworkandDeepLearning/Week2/LogisticRegressionasaNeuralNetwork/datasets/train_catvnoncat.h5'
-test_hdf5_path = 'E:/DeepLearning/C1_NeuralNetworkandDeepLearning/Week2/LogisticRegressionasaNeuralNetwork/datasets/test_catvnoncat.h5'
+train_hdf5_path = 'E://DeepLearning//C1_NeuralNetworkandDeepLearning//Week2//LogisticRegressionasaNeuralNetwork//datasets//train_catvnoncat.h5'
+test_hdf5_path = 'E://DeepLearning//C1_NeuralNetworkandDeepLearning//Week2//LogisticRegressionasaNeuralNetwork//datasets//test_catvnoncat.h5'
 
 # Check the validity of the HDF5 files
 check_hdf5_file(train_hdf5_path)
